@@ -140,7 +140,17 @@ text{
       </li>
       <li class="nav-item active">
 <a  class=" link-hover nav-link example-popover" style="color:white" data-trigger="focus" data-placement="bottom" href="#" data-toggle="popover" title="Contact Details" data-content="Name: Aaron Mukerjee     mob:7738936997">Contact</a>        
-      </li>
+          <script>
+          
+          $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+            $('.popover-dismiss').popover({
+              trigger: 'focus'
+            })
+          });
+
+        </script>
+        </li>
       </ul>
   </div>
   </nav>
@@ -180,30 +190,6 @@ text{
              
     </div>
 
-
-<!-- Modal -->
-<div class="modal fade" style="height:700px;" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-    
-        <h5 class="modal-title" id="exampleModalLabel">Contact me</h5>
-      </div>
-      <div class="modal-body"style="height:400px">
-        <input  class="form-control" type="textbox" placeholder="Your Name"/> 
-        &nbsp;
-        <input  class="form-control" type="textbox" placeholder="Your Email"/>
-        <br/>
-        <textarea  placeholder="Your Message" class="form-control" style="resize: none;" rows="10" cols="100"></textarea>
-        <br/>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Submit</button>
-      </div>
-    </div>
-  </div>
-</div>
 </div>
 
   <div class="row" style="margin-top:10px">
